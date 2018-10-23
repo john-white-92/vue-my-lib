@@ -1,0 +1,30 @@
+// Строки
+@mixin row-auto () {
+	display: flex;
+	flex-flow: row nowrap;
+	flex: 0 0 auto;
+}
+@mixin row-max () {
+	display: flex;
+	flex-flow: row nowrap;
+	flex: 1 1 0px;
+}
+
+// Столбцы
+@mixin col-auto () {
+	display: flex;
+	flex-flow: column nowrap;
+	flex: 0 0 auto;
+}
+@mixin col-max () {
+	display: flex;
+	flex-flow: column nowrap;
+	flex: 1 1 0px;
+}
+
+// Текст одной строкой
+@mixin line() {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
